@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "accent-1": "#E76F51",
-        "accent-2": "#F4A261",
-        "accent-3": "#E9C46A",
-        "accent-4": "#36BA98",
+        "accent-1": "#FFFFFF",
+        "accent-2": "#2D2D2D",
+        "accent-3": "#A8A8A8",
+        "accent-4": "#ED3737",
       },
       fontFamily: {
         "space-mono": ["SpaceMono"],
