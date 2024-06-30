@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, ScrollView } from "react-native";
 
 import tw from "@/styles/tailwind";
 import { StatusBar } from "expo-status-bar";
@@ -11,9 +11,15 @@ interface Props {
 function MainLayout({ children }: Props) {
   return (
     <>
-      <StatusBar animated={false} backgroundColor="#E9C46A" style="dark" />
-      <SafeAreaView style={tw`flex-1 bg-accent-3 pt-10`}>
-        {children}
+      <StatusBar animated={false} backgroundColor="#FFFFFF" style="dark" />
+      <SafeAreaView style={tw`flex-1 bg-accent-1 pt-10`}>
+        <ScrollView
+          keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={tw`pb-5`}
+        >
+          {children}
+        </ScrollView>
       </SafeAreaView>
     </>
   );
